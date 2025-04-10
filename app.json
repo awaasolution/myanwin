@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "myanbet",
-    "slug": "myanbet",
+    "name": "MyanWin",
+    "slug": "myanwin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -14,8 +14,10 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "package": "com.awaasolution.myanwin"
+      },
+      "package": "com.awaasolution.myanwin"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +34,19 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a5406b7d-5ba3-4a94-ade9-575ec2639db6"
+      }
     }
   }
 }
